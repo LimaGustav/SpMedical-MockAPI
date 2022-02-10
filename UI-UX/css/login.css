@@ -1,0 +1,93 @@
+body {
+    background-image: url(../assets/fundo.png);
+    background-size: no-repeat;
+
+    height: 100vh;
+}
+
+.card_login{
+    background: #EDEDED;
+    box-shadow: 7px 11px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    width: 400px;
+    height: 510px;
+}
+
+.container_login{
+    height: 73%;
+    align-items: center;
+}
+
+.logo{
+    width: 90px;
+}
+
+form {
+    height: 210px;
+    align-items: center;
+}
+
+.inputs{
+    height: 85px;
+}
+
+input{
+    border: none;
+
+    background: transparent;
+    
+    border-bottom: 2px solid #83BEDF;
+
+    height: 30px;
+    width: 268px;
+
+}
+
+input:focus{
+    outline:none;
+}
+
+
+input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: black
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+
+.btn_login {
+    width: 135px;
+    height: 45px;
+
+    background: #83BEDF;
+    border-radius: 5px;
+
+    border: none;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+
+    margin-top: 20px;
+}
+
+.btn_login:hover{
+    background: #2fa4e7;
+
+    cursor: pointer;
+}

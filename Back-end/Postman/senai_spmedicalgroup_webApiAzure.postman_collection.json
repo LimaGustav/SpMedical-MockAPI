@@ -1,0 +1,770 @@
+{
+	"info": {
+		"_postman_id": "b493d7f9-8f3a-4979-9cde-e54989c7023d",
+		"name": "senai_spmedicalgroup_webApiAzure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"adm@email.com\",\r\n    \"senha\" : \"adm12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//api/login",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Usuarios.ListarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMjk0NzEzNCwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.ZieT_9upwKUt4lN8dtHcglulx7MLeSv9zwTxfEC3rA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//api/usuarios",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"guga@hotmail.com\",\r\n    \"senha\" : \"gugaserpe123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//api/usuarios",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"usuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//usuarios/12",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"usuarios",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario.CadastarADM",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"gugamed@hotmail.com\",\r\n    \"senha\" : \"gugaserpe123\",\r\n    \"idTipoUsuario\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//api/usuarios/post/adm",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"usuarios",
+								"post",
+								"adm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuario.BuscarPorId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//api/usuarios/12",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"usuarios",
+								"12"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medico",
+			"item": [
+				{
+					"name": "Medico.ListarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMjk0NzEzNCwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.ZieT_9upwKUt4lN8dtHcglulx7MLeSv9zwTxfEC3rA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/medicos",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medico.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMjk0NzEzNCwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.ZieT_9upwKUt4lN8dtHcglulx7MLeSv9zwTxfEC3rA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Crm\" : \"025647\",\r\n    \"IdUsuario\" : 14,\r\n    \"NomeMedico\" : \"Roberto\",\r\n    \"IdClinica\" : 1,\r\n    \"IdEspecialidade\" : 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net//api/medicos",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"",
+								"api",
+								"medicos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medico.Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMjk0NzEzNCwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.ZieT_9upwKUt4lN8dtHcglulx7MLeSv9zwTxfEC3rA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/medicos/14",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"medicos",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Medico.BuscarPorId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMjk0NzEzNCwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.ZieT_9upwKUt4lN8dtHcglulx7MLeSv9zwTxfEC3rA8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/medicos/3",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"medicos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Consulta",
+			"item": [
+				{
+					"name": "Consultas.ListarTodos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBlbWFpbC5jb20iLCJqdGkiOiIxIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsImV4cCI6MTYzMjk0ODgwNSwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.iHbU1yjigTNPNbl9QZVn3ahaqArEFgJ1WqxALopTBGk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/consultas",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"consultas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultas.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdMedico\" : 2,\r\n    \"IdPaciente\" : 7,\r\n    \"DataConsulta\" : \"10/10/2020\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/consultas",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"consultas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultas.Cancelar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/consultas/cancelar/1",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"consultas",
+								"cancelar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultas.AlterarSituação",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"IdSituacao\" : \"1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/consultas/situacao/alterar/1",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"consultas",
+								"situacao",
+								"alterar",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultas.ListarMinhas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZUBnbWFpbC5jb20iLCJqdGkiOiI2IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYzMjkzNjkwMCwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.rz6kPI92lRES3aA3ioikHl4nyx_9zpdEwBdYS7XE-aM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/consultas/minhas",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"consultas",
+								"minhas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultas.AlterarDescrição",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJpY2FyZG8ubGVtb3NAc3BtZWRpY2FsZ3JvdXAuY29tLmJyIiwianRpIjoiMiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjMiLCJleHAiOjE2MzI4NTk2MTYsImlzcyI6IlNQLU1lZGljYWwtR3JvdXAud2ViQVBJIiwiYXVkIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkifQ.ZHHmNoH7rn-a94bnvCy25iNjrlWhZr78r5Oqzc9e2Ig",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Descricao\" : \"Dimitiltriptamina não é ruim\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/consultas/alterar/descricao/2",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"consultas",
+								"alterar",
+								"descricao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paciente",
+			"item": [
+				{
+					"name": "Pacientes.ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/pacientes",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pacientes.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Rg\" : \"1245814\",\r\n    \"Cpf\" : \"43017102807\",\r\n    \"Endereco\" : \"Rua Muritiba, 152\",\r\n    \"IdUsuario\" : 12,\r\n    \"DataNascimento\" : \"01/30/2003\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/pacientes",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"pacientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Clinica",
+			"item": [
+				{
+					"name": "Clinicas.ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/clinicas",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"clinicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clinicas.Cadastrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cnpj\" : \"0154897\",\r\n    \"Email\" : \"578468\",\r\n    \"Endereco\" : \"Maria Dirce\",\r\n    \"RazaoSocial\" : \"Clinica Gerals\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/clinicas",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"clinicas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Clinicas.Deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/clinicas/2",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"clinicas",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TipoUsuario",
+			"item": [
+				{
+					"name": "TiposUsuario.ListarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/tiposusuario",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"tiposusuario"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Perfil",
+			"item": [
+				{
+					"name": "Perfils.SalvarDir",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZUBnbWFpbC5jb20iLCJqdGkiOiI2IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYzMjk0NDI3NSwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.kacAdE6du1XE3_8HBRb_TjhrIdns_ncACXvlsoCM3EU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "arquivo",
+									"type": "file",
+									"src": "/C:/Users/gugag/OneDrive/Área de Trabalho/fidgte.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/perfils/imagem/dir",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"perfils",
+								"imagem",
+								"dir"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Perfils.ConsultarFoto",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFsZXhhbmRyZUBnbWFpbC5jb20iLCJqdGkiOiI2IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYzMjk0NDI3NSwiaXNzIjoiU1AtTWVkaWNhbC1Hcm91cC53ZWJBUEkiLCJhdWQiOiJTUC1NZWRpY2FsLUdyb3VwLndlYkFQSSJ9.kacAdE6du1XE3_8HBRb_TjhrIdns_ncACXvlsoCM3EU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://senai-sp-medical-group.azurewebsites.net/api/perfils/imagem/dir",
+							"protocol": "https",
+							"host": [
+								"senai-sp-medical-group",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"perfils",
+								"imagem",
+								"dir"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

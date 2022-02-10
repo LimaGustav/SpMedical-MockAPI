@@ -1,0 +1,326 @@
+
+
+body {
+    background-image: url(../img/fundo_consultas.png);
+    background-size: no-repeat;
+    background-attachment: fixed;
+}
+
+
+header {
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    height: 95px;
+
+}
+
+#header {
+    margin-top: 75px;
+    margin-bottom: 100px;
+}
+
+header nav {
+    height: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.logo_header {
+    width: 55px;
+}
+
+.container_header {
+    width: 40%;
+}
+
+.ul_header {
+    width: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #544E4E;
+
+    text-transform: uppercase;
+}
+
+.ul_header li {
+    cursor: pointer;
+}
+
+
+.section_agendar{
+    height: max-content;
+
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    height: 500px;
+}
+
+#agendar_card {
+    margin-bottom: 100px;
+}
+
+.container_form {
+    width: 100%;
+    height: 100%;
+}
+
+.section_agendar form {
+    width: 80%;
+    height: 100%;
+}
+
+.container_inputs {
+    height: 60%;
+    width: 100%;
+}
+
+.section_agendar input {
+    height: 70px;
+    max-width: 990px;
+    width: 60%;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    border: none;
+}
+
+.section_agendar select {
+    height: 70px;
+    max-width: 990px;
+    width: 60%;
+    cursor: pointer;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    border: none;
+
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.section_agendar input {
+    height: 70px;
+    max-width: 990px;
+    width: 60%;
+    cursor: pointer;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    border: none;
+
+    font-size: 16px;
+    background-color: white;
+    padding-left: 10px;
+}
+
+.section_agendar input:focus{
+    outline:none;
+}
+
+.section_agendar select:focus{
+    outline:none;
+    stroke: #0077FF
+}
+
+/* option *{
+    color: #223254
+}
+ 
+option:focus {
+    outline: none;
+    border-color: #0077FF;
+    box-shadow: 0 0 0 2px rgba(#0077FF,.2);
+}
+
+option:hover {
+    stroke: #0077FF;
+} */
+
+.section_agendar button {
+    background: #83BEDF;
+    border-radius: 5px;
+
+    width: 200px;
+    height: 65px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+} 
+
+footer {
+    background: #F8F8F8;
+    height: 215px;
+}
+
+.container_footer {
+    height: 100%;
+}
+
+.logo_footer {
+    width: 65px;
+}
+
+.sp_medical_footer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    height: min-content;
+}
+
+.container_logo_footer {
+    text-align: center;
+}
+
+.container_social_media {
+    text-align: center;
+    height: 50%;
+}
+
+.social_footer {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.image_social {
+    width: 100px;
+}
+
+.green_card {
+    background: linear-gradient(90.07deg, rgba(131, 190, 223, 0.79) 20.86%, rgba(129, 223, 153, 0.4) 99.96%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px 25px 20px 20px;
+
+    height: 90px;  
+
+}
+
+#green_card {
+    margin-bottom: 90px;
+}
+
+.green_card span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 58px;
+
+    color: #F9F9F9;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.card_consulta {
+    background: #FCFCFC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+
+    width: 285px;
+    height: 350px;
+
+    margin-bottom: 90px;
+}
+
+.card_consulta p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.card_consulta button {
+    background: #83BEDF;
+    border-radius: 14px;
+
+    width: 155px;
+    height: 40px;
+
+    border: none;
+    cursor: pointer;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: white;
+}
+
+.container_modal {
+    height: 100%;
+
+}
+
+.form_modal {
+    height: min-content;
+}
+
+
+@media (max-width: 1150px) {
+    .ul_header {
+        font-size: 16px;
+    }
+
+    /* .nav_header {
+        justify-content: space-evenly;
+    } */
+}
+
+@media (max-width: 1000px) {
+    .container_header {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 690px) {
+    .consultas {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .container_header {
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .container_header {
+        width: 100%;
+    }
+
+    .logo_header {
+        display: none;
+    }
+
+}

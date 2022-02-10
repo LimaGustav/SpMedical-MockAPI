@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.grid {
+    width: 85%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
